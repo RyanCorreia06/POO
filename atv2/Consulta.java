@@ -1,24 +1,61 @@
 public class Consulta{
-    public LocalDate data;
-    public LocalTime hora;
-    public String medico;
-    public String paciente;
-    public String motivo;
-    public String historico;
-    
-    public void marcar(){
-        
+    private String data;
+    private String hora;
+    private Medico medico;
+    private Paciente paciente;
+    private String motivo;
+    private String historico;
+
+    public String getData() {
+        return data;
+    }
+    public void setData(String data) {
+        this.data = data;
+    }
+    public String getHora() {
+        return hora;
+    }
+    public void setHora(String hora) {
+        this.hora = hora;
+    }
+    public Medico getMedico() {
+        return medico;
+    }
+    public void setMedico(Medico medico) {
+        this.medico = medico;
+    }
+    public Paciente getPaciente() {
+        return paciente;
+    }
+    public void setPaciente(Paciente paciente) {
+        this.paciente = paciente;
+    }
+    public String getMotivo() {
+        return motivo;
+    }
+    public void setMotivo(String motivo) {
+        this.motivo = motivo;
+    }
+    public String getHistorico() {
+        return historico;
+    }
+    public void setHistorico(String historico) {
+        this.historico = historico;
     }
     
-    public void cancelar(){
-        
+    public void mostrar() {
+        System.out.println("Consulta [data=" + data + ", hora=" + hora );
+        System.out.println("\n medico=" + medico + ", paciente=" + paciente);
+        System.out.println("\n\n motivo=" + motivo + ", historico=" + historico );
     }
- 
-    public void consultar(){
-        
-    } 
-    
-    public void realizar(){
+
+    public void cancelar(){}//todo
+    public void marcar(){}//todo
+    public void consultar(){}//todo
+    public void realizar(){}//todo
+    public void atualizar(){}//todo
+}
+
         
     }
 
